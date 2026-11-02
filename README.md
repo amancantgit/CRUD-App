@@ -42,49 +42,6 @@ A responsive full-stack task management application built using the MERN stack (
 
 ---
 
-## 📁 Project Structure
-
-CRUD-App/
-├── backend/
-│   ├── src/
-│   │   ├── config/          # Database connection
-│   │   ├── controllers/     # Route request handlers
-│   │   ├── models/          # Mongoose Task schema
-│   │   ├── routes/          # API route endpoints
-│   │   ├── services/        # Business logic & weekly stats
-│   │   └── server.js        # Express app entry point
-│   ├── .env.example
-│   └── package.json
-├── frontend/
-│   ├── public/              # Static assets & Netlify redirects
-│   ├── src/
-│   │   ├── components/      # UI components (Onboarding, TaskScreen, TaskModal, etc.)
-│   │   ├── services/        # Axios API client
-│   │   ├── App.jsx          # Root component & screen routing
-│   │   ├── index.css        # Global CSS & Tailwind imports
-│   │   └── main.jsx
-│   ├── .env.example
-│   └── package.json
-└── README.md
-
----
-
-## 🔌 API Endpoints
-
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | /api/health | Service health check |
-| GET | /api/tasks | Get tasks (supports ?date=YYYY-MM-DD and ?status=) |
-| GET | /api/tasks/weekly-summary | Get weekly metrics and tasks for Mon–Sun range |
-| GET | /api/tasks/search?q=query | Search tasks by title or description |
-| GET | /api/tasks/:id | Get single task by ID |
-| POST | /api/tasks | Create a new task |
-| PUT | /api/tasks/:id | Update an existing task |
-| PATCH | /api/tasks/:id/status | Quick toggle task status (In Progress / Completed) |
-| DELETE | /api/tasks/:id | Delete a task |
-
----
-
 ## 🚀 Local Development Setup
 
 ### Prerequisites
@@ -106,7 +63,7 @@ MONGODB_URI=your_mongodb_connection_uri
 
 Start the backend development server:
 npm run dev
-# Server will run at http://localhost:5000
+## Server will run at http://localhost:5000
 
 ### 3. Frontend Setup
 In a new terminal:
@@ -118,7 +75,7 @@ VITE_API_URL=http://localhost:5000/api
 
 Start the frontend development server:
 npm run dev
-# App will open at http://localhost:5173
+## App will open at http://localhost:5173
 
 ---
 
